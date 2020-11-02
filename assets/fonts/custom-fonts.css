@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "precious_font";
+  src: url("./Precious.ttf") format("opentype");
+}
+@font-face {
+  font-family: "Magiera_font";
+  src: url("./Magiera.ttf") format("opentype");
+}
+@font-face {
+  font-family: "BlackWindow_font";
+  src: url("./BlackWindow-WEyG.ttf") format("opentype");
+}
+@font-face {
+  font-family: "Antique_font";
+  src: url("./AntiqueBookCover-njgJ.otf") format("opentype");
+}
