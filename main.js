@@ -2070,7 +2070,6 @@ class MovieDisplayComponent {
             location.href = "#";
             location.href = "#movie-dis-bottom";
             this.keyword = mes.text;
-            console.log("In movie " + this.keyword);
             setTimeout(() => {
                 this.loading = false;
                 this.inititateCard();
@@ -2133,9 +2132,8 @@ class MovieDisplayComponent {
         }
         else {
             this.data_needed = true;
-            console.log(this.data_needed);
         }
-        if (this.movies_data[data01] == undefined || [9] == undefined || this.movies_data[data01][9] == '') {
+        if (this.movies_data[data01][9] == undefined || this.movies_data[data01][9] == '') {
             var name = data01;
             this.data1 = this.movies_data[data01];
             this.data1.push(data01);
@@ -2287,7 +2285,6 @@ class SearchComponent {
         this.loadText();
     }
     submit() {
-        console.log(this.search.searchkey);
         this.message.sendMessage(this.search.searchkey);
         this.search.searchkey = '';
     }
